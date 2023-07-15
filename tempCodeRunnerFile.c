@@ -1,0 +1,1 @@
+ b = (unsigned)carry << 1; 

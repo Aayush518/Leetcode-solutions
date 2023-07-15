@@ -5,6 +5,7 @@ int main()
     int num1, num2, sum, carry;
     printf("Enter two numbers &num1, &num2: ");
     scanf("%d %d", &num1, &num2);
+
     while (num2 != 0)
     {
         sum = num1 ^ num2; //SUM of two integer is num1 XOR num2
@@ -13,5 +14,12 @@ int main()
         num2 = carry;
     }
     printf("Sum = %d", sum);
+// display the sum in binary form
+    printf("\nSum in binary form = ");
+    while (sum != 0)
+    {
+        printf("%d", sum % 2);
+        sum /= 2;
+    }
     return 0;
 }
