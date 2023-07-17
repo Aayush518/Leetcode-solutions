@@ -5,13 +5,13 @@ int getSum(int a, int b) {
     while(b)
     {
         int carry = a & b; // get all carry bits (all 1&1s)
-        printf("%d\n",carry);
+        
         a = a^b; // sum of disjoint bits (everything except what needs to be carried)
-        printf("%d\n",a);
+        
         // shift carry by one, as this is how a regular sum operation works
         // the carry is moved to the next position
         b = (unsigned)carry << 1; 
-        printf("%d\n",b);
+        
     }
     return a;
 }
