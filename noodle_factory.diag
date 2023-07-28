@@ -1,7 +1,26 @@
 blockdiag {
   orientation = portrait;
+  default_node_color = "#cce6ff";
+  default_group_color = "#ccffcc";
 
-  "Raw Material Handling" -> "Mixing and Kneading" -> "Extrusion and Shaping" -> "Steaming or Drying" -> "Cooling and Sorting" -> "Packaging" -> "Quality Control" -> "Storage and Distribution" -> "Utilities";
+  // Process Steps
+  "Raw Material Handling" [shape = roundedbox];
+  "Mixing and Kneading" [shape = roundedbox];
+  "Extrusion and Shaping" [shape = roundedbox];
+  "Steaming or Drying" [shape = roundedbox];
+  "Cooling and Sorting" [shape = roundedbox];
+  "Packaging" [shape = roundedbox];
+  "Quality Control" [shape = roundedbox];
+  "Storage and Distribution" [shape = roundedbox];
+
+  // Utility
+  "Utilities" [shape = roundedbox, color = "#000000"];
+
+  // Waste Management
+  "Waste Management" [shape = roundedbox, color = "#000000"];
+
+  // Connections between blocks
+  "Raw Material Handling" -> "Mixing and Kneading" -> "Extrusion and Shaping" -> "Steaming or Drying" -> "Cooling and Sorting" -> "Packaging" -> "Quality Control" -> "Storage and Distribution";
   "Utilities" -> "Steaming or Drying";
   "Utilities" -> "Packaging";
   "Utilities" -> "Cooling and Sorting";
