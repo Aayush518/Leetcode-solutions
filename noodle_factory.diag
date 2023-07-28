@@ -1,0 +1,9 @@
+blockdiag {
+  orientation = portrait;
+
+  "Raw Material Handling" -> "Mixing and Kneading" -> "Extrusion and Shaping" -> "Steaming or Drying" -> "Cooling and Sorting" -> "Packaging" -> "Quality Control" -> "Storage and Distribution" -> "Utilities";
+  "Utilities" -> "Steaming or Drying";
+  "Utilities" -> "Packaging";
+  "Utilities" -> "Cooling and Sorting";
+  "Waste Management" -> "Steaming or Drying";
+}
