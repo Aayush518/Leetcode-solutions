@@ -1,1 +1,1 @@
- b = (unsigned)carry << 1; 
+nary_difference[9];
