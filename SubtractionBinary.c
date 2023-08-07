@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include<stdint.h>
 
 int getSum(int a, int b) {
     int carry = 0;

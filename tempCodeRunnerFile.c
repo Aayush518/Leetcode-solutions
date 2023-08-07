@@ -1,1 +1,1 @@
-nary_difference[9];
+#include<stdio.h>

@@ -43,8 +43,7 @@ void add(int ac[], int x[], int q) {
    int main(int argc, char **argv) {
       int mt[10], br[10], qr[10], sc, ac[10] = { 0 };
       int brn, qrn, i, qn, temp;
-      cout << "\n--Enter the multiplicand and multipier in signed 2's
-      complement form if negative--";
+      cout << "\n--Enter the multiplicand and multipier in signed 2's complement form if negative--";
       cout << "\n Number of multiplicand bit=";
       cin >> brn;
       cout << "\nmultiplicand=";
